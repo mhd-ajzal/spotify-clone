@@ -4,6 +4,9 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
 	plugins: [react()],
+	build: {
+	outDir: "public", // Set the output directory to "public"
+	},
 	resolve: {
 		alias: {
 			"@": path.resolve(__dirname, "./src"),
