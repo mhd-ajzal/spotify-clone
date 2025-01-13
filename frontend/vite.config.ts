@@ -4,8 +4,10 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
 	plugins: [react()],
+	publicDir: "static", 
 	build: {
-	outDir: "public", // Set the output directory to "public"
+		outDir: "dist", 
+		emptyOutDir: true, 
 	},
 	resolve: {
 		alias: {
